@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#02060d" />
+  <title>Project AI</title>
+  <meta name="description" content="Project AI — a personal AI assistant by DP Studios." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-name">PROJECT AI</span>
+        <span class="brand-sub">by DP Studios</span>
+      </div>
+      <span class="sys-tag">SYS ONLINE</span>
+    </header>
+
+    <section class="stage">
+      <div id="core"></div>
+    </section>
+
+    <section class="chat" aria-label="Conversation with Project AI">
+      <div class="chat-head">
+        <span class="chat-title">SESSION</span>
+        <button type="button" class="ghost-btn" id="newBtn" disabled>New</button>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <form class="composer" id="composer">
+        <textarea
+          id="input"
+          rows="1"
+          maxlength="4000"
+          placeholder="Message Project AI…"
+          aria-label="Message Project AI"
+        ></textarea>
+        <button type="submit" class="send-btn" id="sendBtn" disabled>Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
